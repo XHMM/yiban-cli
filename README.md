@@ -1,3 +1,6 @@
+【this package is only for personal use】
+---
+
 # Usage
 <!-- usage -->
 ```sh-session
@@ -5,7 +8,7 @@ $ npm install -g yiban-cli
 $ yiban COMMAND
 running command...
 $ yiban (-v|--version|version)
-yiban-cli/0.0.1 win32-x64 node-v10.15.3
+yiban-cli/0.0.2 win32-x64 node-v10.15.3
 $ yiban --help [COMMAND]
 USAGE
   $ yiban COMMAND
@@ -49,5 +52,5 @@ OPTIONS
   -h, --help  查看帮助
 ```
 
-_See code: [src\commands\page.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.1/src\commands\page.ts)_
+_See code: [src\commands\page.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.2/src\commands\page.ts)_
 <!-- commandsstop -->
