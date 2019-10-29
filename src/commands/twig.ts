@@ -70,8 +70,15 @@ export default class Twig extends Command {
         await addContentByComment(
           routerFile,
           `/*---[don't remove me]yiban-cli-page-router-register---*/`,
-          `${cameCaseProjectName}Router.get('/', (req, res) => {
-  res.render('${projectName}/${pageName}.html.twig', {});
+          `${cameCaseProjectName}Router.get('/${pageName}', (req, res) => {
+  res.render('${projectName}/${pageName}.html.twig', {
+    path: (str) => {
+      return str;
+    },
+    asset: (str) => {
+      return str;
+    }
+  });
 });`
         );
       } else {
@@ -82,8 +89,15 @@ export default class Twig extends Command {
     
 const ${cameCaseProjectName}Router = express.Router();
 
-${cameCaseProjectName}Router.get('/', (req, res) => {
-  res.render('${projectName}/${pageName}.html.twig', {});
+${cameCaseProjectName}Router.get('/${pageName}', (req, res) => {
+  res.render('${projectName}/${pageName}.html.twig', {
+    path: (str) => {
+      return str;
+    },
+    asset: (str) => {
+      return str;
+    }  
+  });
 });
 /*---[don't remove me]yiban-cli-page-router-register---*/
 
