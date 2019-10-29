@@ -1,6 +1,6 @@
 {
-  "name": "yiban-cli",
-  "version": "0.0.2",
+  "name": "@xhmm/yiban-cli",
+  "version": "0.0.3",
   "author": "xhmm @XHMM",
   "bin": {
     "yiban": "./bin/run"
@@ -37,7 +37,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "https://github.com/XHMM/yiban-cli",
+  "repository": "git://github.com/XHMM/yiban-cli.git",
   "scripts": {
     "postpack": "rimraf oclif.manifest.json",
     "prepack": "rimraf lib && tsc && oclif-dev manifest && oclif-dev readme"

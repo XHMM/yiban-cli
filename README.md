@@ -2,11 +2,11 @@
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g yiban-cli
+$ npm install -g @xhmm/yiban-cli
 $ yiban COMMAND
 running command...
 $ yiban (-v|--version|version)
-yiban-cli/0.0.2 win32-x64 node-v10.16.3
+@xhmm/yiban-cli/0.0.3 win32-x64 node-v10.16.3
 $ yiban --help [COMMAND]
 USAGE
   $ yiban COMMAND
@@ -15,9 +15,23 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`yiban card PAGENAME`](#yiban-card-pagename)
 * [`yiban help [COMMAND]`](#yiban-help-command)
-* [`yiban page FILENAME`](#yiban-page-filename)
-* [`yiban twig [FILE]`](#yiban-twig-file)
+* [`yiban twig PROJECTNAME`](#yiban-twig-projectname)
+
+## `yiban card PAGENAME`
+
+新建twig页面及相关依赖(适用于易班的'公益卡片PC端'项目)
+
+```
+USAGE
+  $ yiban card PAGENAME
+
+ARGUMENTS
+  PAGENAME  页面名称
+```
+
+_See code: [src\commands\card.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.3/src\commands\card.ts)_
 
 ## `yiban help [COMMAND]`
 
@@ -36,36 +50,20 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src\commands\help.ts)_
 
-## `yiban page FILENAME`
+## `yiban twig PROJECTNAME`
 
-新建twig页面及相关依赖(仅适用于公益卡片PC端)
+新建twig项目(适用于易班的'web_pages'项目)
 
 ```
 USAGE
-  $ yiban page FILENAME
+  $ yiban twig PROJECTNAME
 
 ARGUMENTS
-  FILENAME  页面名称(不需写后缀,不能以点开头)
+  PROJECTNAME  项目名称
 
 OPTIONS
-  -h, --help  查看帮助
+  --page=page  (required) 页面名称
 ```
 
-_See code: [src\commands\page.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.2/src\commands\page.ts)_
-
-## `yiban twig [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ yiban twig [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-```
-
-_See code: [src\commands\twig.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.2/src\commands\twig.ts)_
+_See code: [src\commands\twig.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.3/src\commands\twig.ts)_
 <!-- commandsstop -->
