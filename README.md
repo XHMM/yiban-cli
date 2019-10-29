@@ -6,7 +6,7 @@ $ npm install -g @xhmm/yiban-cli
 $ yiban COMMAND
 running command...
 $ yiban (-v|--version|version)
-@xhmm/yiban-cli/0.0.5 win32-x64 node-v10.16.3
+@xhmm/yiban-cli/0.0.6 win32-x64 node-v10.16.3
 $ yiban --help [COMMAND]
 USAGE
   $ yiban COMMAND
@@ -31,7 +31,7 @@ ARGUMENTS
   PAGENAME  页面名称
 ```
 
-_See code: [src\commands\card.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.5/src\commands\card.ts)_
+_See code: [src\commands\card.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.6/src\commands\card.ts)_
 
 ## `yiban help [COMMAND]`
 
@@ -65,5 +65,5 @@ OPTIONS
   --page=page  (required) 页面名称
 ```
 
-_See code: [src\commands\twig.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.5/src\commands\twig.ts)_
+_See code: [src\commands\twig.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.6/src\commands\twig.ts)_
 <!-- commandsstop -->

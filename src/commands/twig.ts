@@ -44,7 +44,7 @@ export default class Twig extends Command {
       await createFile(
         tsDir,
         `${pageName}.ts`,
-        `import 'scss/${projectName}/index.scss';`
+        `import 'scss/${projectName}/${pageName}.scss';`
       );
       await createFile(
         twigDir,
