@@ -43,5 +43,5 @@ export function exists(path: string): boolean {
 export function toCamelCase(str: string, separator: string): string {
   return str.replace(new RegExp(`(${separator}([a-zA-Z]))`, 'g'), function(match, $1, $2) {
     return $2.toUpperCase();
-  }).replace(/-/g, '');
+  }).replace(new RegExp(`${separator}`), '');
 }
