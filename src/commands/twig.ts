@@ -53,13 +53,13 @@ export default class Twig extends Command {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    {# TODO: CSS文件路径 #}
+    {# TODO #}
     <link rel="stylesheet" href="/${projectName}/${pageName}.css">
     <title>标题</title>
 </head>
 <body>
 
-{# TODO: JS文件路径 #}
+{# TODO #}
 <script src="/${projectName}/${pageName}.js"></script>
 </body>
 </html>`

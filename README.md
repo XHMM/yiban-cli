@@ -6,7 +6,7 @@ $ npm install -g @xhmm/yiban-cli
 $ yiban COMMAND
 running command...
 $ yiban (-v|--version|version)
-@xhmm/yiban-cli/0.0.7 win32-x64 node-v10.16.3
+@xhmm/yiban-cli/0.0.7 darwin-x64 node-v12.16.1
 $ yiban --help [COMMAND]
 USAGE
   $ yiban COMMAND
@@ -31,7 +31,7 @@ ARGUMENTS
   PAGENAME  页面名称
 ```
 
-_See code: [src\commands\card.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.7/src\commands\card.ts)_
+_See code: [src/commands/card.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.7/src/commands/card.ts)_
 
 ## `yiban help [COMMAND]`
 
@@ -48,7 +48,7 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src\commands\help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 
 ## `yiban twig PROJECTNAME`
 
@@ -65,5 +65,5 @@ OPTIONS
   --page=page  (required) 页面名称
 ```
 
-_See code: [src\commands\twig.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.7/src\commands\twig.ts)_
+_See code: [src/commands/twig.ts](https://github.com/XHMM/yiban-cli/blob/v0.0.7/src/commands/twig.ts)_
 <!-- commandsstop -->
